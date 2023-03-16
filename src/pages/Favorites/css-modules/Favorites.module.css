@@ -1,0 +1,62 @@
+.containerFilters {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+}
+
+@keyframes fadeIn{
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Estilo base */
+select {
+  padding: 6px;
+	margin: 6px;
+  font-size: 14px;
+  border: none;
+  background-color: #021d34;
+  border-radius: 5px;
+	color: #fff;
+}
+  
+/* Estilo del borde */
+select:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgb(0, 255, 42);
+  border: 1px solid rgb(0, 255, 42);
+}
+  
+/* Estilo de la flecha */
+select::-ms-expand {
+  display: none;
+}
+  
+select::after {
+  content: '\25BC';
+  color: #aaa;
+  font-size: 12px;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+  
+/* Estilo de las opciones */
+select option {
+  font-size: 16px;
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 4px;
+  padding: 8px;
+  color: #333;
+}
+  
+/* Estilo de las opciones seleccionadas */
+select option:checked {
+  background-color: #719ece;
+  color: #fff;
+}

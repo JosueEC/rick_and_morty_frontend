@@ -1,0 +1,46 @@
+nav{
+  background: #02152b;
+  height: 80px;
+  width: 100%;
+}
+label .logo{
+  color: white;
+	text-decoration: none;
+  font-size: 22px;
+  line-height: 80px;
+  padding: 0 40px;
+}
+label .logo:hover {
+	color: rgb(0, 255, 42);
+  transition: 0.5s;
+}
+nav ul{
+  float: right;
+  margin-right: 10px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li .link{
+  color: white;
+	text-decoration: none;
+  font-size: 13px;
+  padding: 7px 13px;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+.link:hover{
+  background: rgb(0, 255, 42);
+  transition: .5s;
+}
+@media (max-width: 952px){
+  label .logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li .link{
+    font-size: 16px;
+  }
+}

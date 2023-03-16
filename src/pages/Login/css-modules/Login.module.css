@@ -1,0 +1,34 @@
+.containerLogin {
+	position: absolute;
+  /* background: red; */
+	width: 100%;
+	height: 100vh;
+	color: white;
+	display: grid;
+	place-items: center;
+	animation-name: fadeIn;
+	animation-duration: 1s;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+form {
+	position: absolute;
+	background: #02152b;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 50%;
+	height: 50%;
+	font-size: 25px;
+	padding: 10px;
+	border-radius: 20px;
+}

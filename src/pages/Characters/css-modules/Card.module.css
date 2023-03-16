@@ -1,0 +1,136 @@
+.containerCard {
+  position: relative;
+  width: 170px;
+  height: 260px;
+  background: #021d34;
+  border-radius: 20px;
+  box-shadow: 0px 25px 20px -20px rgba(0, 0, 0, 0.45),
+							25px 0 20px -20px rgba(0, 0, 0, 0.45);
+	transition: 0.5s;
+	cursor: pointer;
+	animation-name: fadeIn;
+  animation-duration: 1s;
+}
+
+@keyframes fadeIn {
+	from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.containerCard:hover {
+	box-shadow: 0 0 50px rgb(0, 255, 42);
+	text-shadow: 0 0 20px rgb(25, 255, 128);;
+	transform: scale(1.05);
+}
+
+.containerCard:hover .portal {
+	scale: 1.38;
+	animation: 13s rotate linear infinite;
+	border-radius: 50%;
+	background:rgb(25, 255, 128);
+}
+
+.containerCard:hover img {
+	filter: none;
+}
+
+@keyframes rotate {
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+/*/////////////////////////////////////////////////////////////*/
+
+.boxImg {
+	display: grid;
+	place-items: center;
+}
+
+.portal {
+	transition: 0.5s;
+	scale: 0.8;
+}
+
+img {
+	position: absolute;
+	top: 15%;
+	max-width: 60%;
+	border-radius: 50%;
+	transition: 0.5s;
+	filter: grayscale(100%);
+}
+
+img:hover {
+	transform: scale(1.18);
+	visibility: visible;
+	filter: none;
+}
+
+.buttonClose {
+	position: relative;
+	width: 10%;
+	border-radius: 50%;
+	background: red;
+	border: none;
+	top: 2%;
+	left: 70%;
+	transition: 0.5s;
+	color: #fff;
+}
+
+.buttonClose:hover, .buttonFav:hover {
+	transform: scale(1.5);
+}
+
+.buttonFav {
+	position: relative;
+	width: 10%;
+	border-radius: 50%;
+	background: none;
+	border: none;
+	top: 2%;
+	left: 10%;
+	transition: 0.5s;
+	color: #fff;
+}
+
+/*////////////////////////////////////////////////////////*/
+
+
+/*/////////////////////////////////////////////////////////////*/
+
+.boxContent {
+	position: relative;
+	top: 55%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 5px;
+	font-size: 1.05em;
+	color: #fff;
+	transition: 0.2s;
+}
+
+span {
+	transition: 0.5s;
+}
+
+span:hover {
+	color: rgb(25, 255, 128);
+	border-bottom: solid;
+	border-width: 4px;
+}
+
+.link {
+	text-decoration: none;
+}

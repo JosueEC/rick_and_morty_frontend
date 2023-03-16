@@ -1,0 +1,16 @@
+.containerSearchBar {
+  padding-right: 10px;
+}
+
+.buttonSearch {
+	font-size: 15px;
+	padding: 0 14px;
+	border: none;
+	background: rgb(0, 138, 23);
+	color: rgb(255, 252, 252);
+}
+
+.input {
+	border: none;
+	font-size: 15px;
+}
